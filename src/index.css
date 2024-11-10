@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes barinsert {}
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Itim&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.search-Background {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(85, 184, 222, 1) 100%);
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.policy-Background {
+    background: rgb(85, 184, 222);
+    background: linear-gradient(0deg, rgba(85, 184, 222, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.policy-Logo {
+    font-size: 200px;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.bg-Logo {
+    width: 300px;
+    /* Adjust width as needed */
+    height: 300px;
+    /* Adjust height as needed */
+    background: radial-gradient(circle, rgba(0, 0, 128, 0.7), #000);
+    /* Deep blue to black */
+    border-radius: 20px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px 10px rgba(0, 0, 128, 0.5), 0 0 40px 20px rgba(0, 0, 128, 0.3), 0 0 80px 40px rgba(0, 0, 128, 0.1);
+    /* Layered blue glows */
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.trapezoid-left {
+    width: 400px;
+    height: 10px;
+    background: white;
+    clip-path: polygon(0% 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.trapezoid-right {
+    width: 400px;
+    height: 10px;
+    background: white;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.trapezoid-policy-left {
+    width: 120px;
+    height: 10px;
+    background: white;
+    clip-path: polygon(0% 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.trapezoid-policy-right {
+    width: 120px;
+    height: 10px;
+    background: white;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-Introduction {
+    background-image: url("/public/assets/bg-Introduction.gif");
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.body-parent {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.body-portions1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.body-portions2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.body-portions3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+@keyframes Blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+.logo-blink {
+    animation: Blink 400ms ease-in-out 3 forwards;
+}
+
+.blink-on-hover:hover {
+    animation: Blink 500ms 2;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.oswald-thin {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.oswald-light {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.oswald-regular {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-medium {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.oswald-bold {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itim-bold {
+    font-family: "Itim", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+}
